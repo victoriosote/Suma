@@ -15,5 +15,10 @@ namespace Websuma.Controllers
         {
             return a + b;
         }
+        [HttpPost]
+        public int sumar([FromHeader]int a, [FromHeader] int b)
+        {
+            return a + b;
+        }
     }
 }
